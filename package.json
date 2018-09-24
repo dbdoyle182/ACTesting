@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dbdoyle182/ACTesting/issues"
   },
-  "homepage": "https://github.com/dbdoyle182/ACTesting#readme"
+  "homepage": "https://github.com/dbdoyle182/ACTesting#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1"
+  }
 }
