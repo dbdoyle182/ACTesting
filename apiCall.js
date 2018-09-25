@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     testCredentials: (ac) => {
         // TEST API credentials
         ac.credentials_test().then(function(result) {
@@ -29,6 +29,11 @@ module.export = {
             console.log(result)
         }, (error) => {
             console.log(error)
+        })
+    },
+    runSyncOnData: (ac, array, func) => {
+        array.forEach(data => {
+            func(ac, data)
         })
     }
 }

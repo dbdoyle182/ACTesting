@@ -2,7 +2,7 @@ const fs = require("fs");
 const papa = require("papaparse");
 const ActiveCampaign = require("activecampaign");
 require("dotenv").config();
-const apiCalls = require("./apiCall");
+const apiCalls = require("./apiCall.js");
 let data, userEmail;
 let historicalCSVData = fs.readFileSync(__dirname + "/test.csv", 'utf8');
 let apiUrl = "http://scw.api-us1.com";
