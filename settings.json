@@ -1,5 +1,3 @@
 {
-    "apiUrl":"https://www.security-camera-warehouse.com/",
-    "baseUrl":"https://www.security-camera-warehouse.com/admin/oauth_authorize/",
-    "accessTokenUrl":"https://www.security-camera-warehouse.com/oauth/token/"
+    "CSVpath":"/test.csv"
 }

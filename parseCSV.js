@@ -3,8 +3,9 @@ const papa = require("papaparse");
 const ActiveCampaign = require("activecampaign");
 require("dotenv").config();
 const apiCalls = require("./apiCall.js");
+const settings = require("./settings.json")
 let data, userEmail;
-let historicalCSVData = fs.readFileSync(__dirname + "/test.csv", 'utf8');
+let historicalCSVData = fs.readFileSync(__dirname + settings.CSVpath, 'utf8');
 let apiUrl = "http://scw.api-us1.com";
 const apiKey = process.env.AC_API_KEY;
 
