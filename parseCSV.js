@@ -1,6 +1,7 @@
 const fs = require("fs");
 const papa = require("papaparse");
 const ActiveCampaign = require("activecampaign");
+require("dotenv").config();
 const apiCalls = require("./apiCall");
 let data, userEmail;
 let historicalCSVData = fs.readFileSync(__dirname + "/test.csv", 'utf8');
@@ -39,8 +40,4 @@ apiCalls.contactExists(ac, "daniel.doyle@security-camera-warehouse.com")
 
 // Loops through the revised data pool and makes an API call per item
 
-revisedData.forEach(data => {
-    apiCalls.contactSync(ac, data)
-})
-
-console.log(revisedData)
+apiCalls.runSyncOnData(ac, revisedData, apiCalls.contactSync)
